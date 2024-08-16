@@ -30,13 +30,13 @@ function Header() {
         <a href="/api#pricing">Models</a>
         {isLoggedIn ? (
           <>
-            <a href="javascript:void(0);" id="profile-button">Profile</a>
-            <a href="javascript:void(0);" id="logout-button" onClick={handleLogout}>
+            <a href="#" id="profile-button">Profile</a>
+            <a href="#" id="logout-button" onClick={handleLogout}>
               Log Out
             </a>
           </>
         ) : (
-          <a href="javascript:void(0);" id="auth-button" onClick={handleLogin}>
+          <a href="#" id="auth-button" onClick={handleLogin}>
             Login / Sign Up
           </a>
         )}
