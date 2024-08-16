@@ -1,0 +1,73 @@
+:root {
+    --primary-bg: linear-gradient(135deg, #1e0533, #110a1f);
+    --accent-color: #8a2be2;
+    --text-color: #ffffff;
+    --text-secondary: #b3b3b3;
+    --gradient-1: linear-gradient(45deg, #726bff, #57b6fe);
+    --gradient-2: linear-gradient(45deg, #8a2be2, #4b0082);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+#auth-button, #profile-button, #logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: var(--gradient-1);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
